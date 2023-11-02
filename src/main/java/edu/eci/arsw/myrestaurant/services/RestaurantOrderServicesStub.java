@@ -86,6 +86,10 @@ public class RestaurantOrderServicesStub implements RestaurantOrderServices {
     public Map<Integer, Order> getOrders() throws OrderServicesException {
         return tableOrders;
     }
+    public int getTotal() throws OrderServicesException {
+        return 1;
+    }
+
 
     private static final Map<String, RestaurantProduct> productsMap;
 
